@@ -10,6 +10,7 @@ namespace tetris
     {
         static void Main(string[] args)
         {
+            //Initial
         }
     }
 }
