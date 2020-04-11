@@ -11,6 +11,8 @@ namespace tetris
         static void Main(string[] args)
         {
             //Initial
+            //Start
+            //begin
         }
     }
 }
