@@ -10,9 +10,7 @@ namespace tetris
     {
         static void Main(string[] args)
         {
-            //Initial
-            //Start
-            //begin
+            Console.WriteLine("Hello World!");
         }
     }
 }
