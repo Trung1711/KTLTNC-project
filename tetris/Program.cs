@@ -13,7 +13,8 @@ namespace tetris
             Console.WriteLine("Hello World!");
             Console.ReadKey();
             Console.WriteLine();
-            Console.WriteLine("what's your name?");
+            Console.WriteLine("what's your name");
+
         }
     }
 }

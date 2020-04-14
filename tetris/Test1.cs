@@ -9,5 +9,6 @@ namespace tetris
     class Test1
     {
         int x;
+        int y;
     }
 }
