@@ -1,0 +1,56 @@
+﻿<Window x:Class="TH7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TH7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl Height="411" Width="783" VerticalAlignment="Top" HorizontalAlignment="Left" >
+            
+            <TabItem Header="ax + b = 0">
+                <Grid>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac1A" Height="23" TextWrapping="Wrap" Width="120" Margin="139,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac1A"/>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac1B" Height="23" TextWrapping="Wrap" Width="120" Margin="139,70,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac1B"/>
+                    <TextBox  x:Name="TextBac1KPLN" Height="23" TextWrapping="Wrap" Width="120" Margin="139,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewKeyDown="textBox_PreviewKeyDownKPLN" TextChanged="TextChangedBac1KPLN" PreviewTextInput="targetTextbox_PreviewTextInput" />
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac1SS" Height="23" TextWrapping="Wrap" Width="120" Margin="139,175,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac1SS" KeyDown="KeyDownBac1" PreviewTextInput="targetTextbox_PreviewTextInputSS"/>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac1KetQua" Height="23" TextWrapping="Wrap" Width="120" Margin="139,233,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="Nhap a:" RenderTransformOrigin="1.094,2.611" Margin="23,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Nhap b:" RenderTransformOrigin="1.094,2.611" Margin="22,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Khoan phan li nghiem:" RenderTransformOrigin="1.094,2.611" Margin="22,125,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Sai so:" RenderTransformOrigin="1.094,2.611" Margin="22,175,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Ket Qua" RenderTransformOrigin="1.094,2.611" Margin="22,240,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <StatusBar VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Background="Beige">
+                        <TextBlock x:Name="StatBarTextBac1" Text="Ready"/>
+                    </StatusBar>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="ax2 + bx + c = 0">
+                <Grid>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac2A" Height="23" TextWrapping="Wrap" Width="120" Margin="139,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac2A"/>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac2B" Height="23" TextWrapping="Wrap" Width="120" Margin="139,70,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac2B"/>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac2C" Height="23" TextWrapping="Wrap" Width="120" Margin="140,137,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac2C"/>
+                    <TextBox  x:Name="TextBac2KPLN" Height="23" TextWrapping="Wrap" Width="120" Margin="140,199,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewKeyDown="textBox_PreviewKeyDownKPLN2" TextChanged="TextChangedBac2KPLN" PreviewTextInput="targetTextbox_PreviewTextInput" />
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac2SS" Height="23" TextWrapping="Wrap" Width="120" Margin="139,250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextChangedBac2SS" KeyDown="KeyDownBac2" PreviewTextInput="targetTextbox_PreviewTextInputSS"/>
+                    <TextBox  local:TextBoxHelpers.IsNumeric="True" x:Name="TextBac2KetQua" Height="23" TextWrapping="Wrap" Width="120" Margin="139,291,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="Nhap a:" RenderTransformOrigin="1.094,2.611" Margin="21,25,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Nhap b:" RenderTransformOrigin="1.094,2.611" Margin="21,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Nhap C:" RenderTransformOrigin="1.094,2.611" Margin="22,147,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+                    <TextBlock TextWrapping="Wrap" Text="Khoan phan li nghiem:" RenderTransformOrigin="1.094,2.611" Margin="21,199,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Sai so:" RenderTransformOrigin="1.094,2.611" Margin="21,250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Ket Qua" RenderTransformOrigin="1.094,2.611" Margin="21,298,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <StatusBar VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Background="Beige">
+                        <TextBlock x:Name="StatBarTextBac2" Text="Ready"/>
+                    </StatusBar>
+                </Grid>
+            </TabItem>
+           
+            
+        </TabControl>
+
+
+    </Grid>
+</Window>
